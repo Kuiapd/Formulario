@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.error-text {
+  font-size: 12px;
+  color: red;
+}
+
+.vermelho{
+  color:red;
+  list-style:none;
+}
+
+/* ===== Estilo da tabela de usuários ===== */
+.listausers {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.listausers table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.listausers thead {
+  background: #4CAF50; /* verde bonitão */
+  color: white;
+  text-align: left;
+}
+
+.listausers th,
+.listausers td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.listausers tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.listausers tbody tr:hover {
+  background: #f1f1f1;
+}
+
+.listausers tfoot {
+  background: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.listausers tfoot td {
+  padding: 10px;
+  color: #333;
+}
